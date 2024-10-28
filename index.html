@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <ul>
+        <li><a href="#about">
+          <span>About Me</span>
+        </a></li>
+        <li><a href="#projects">
+          <span>Projects</span>
+        </a></li>
+        <li><a href="#contact">
+          <span>Contact</span>
+        </a></li>
+        <li>
+          <!-- Dark/Light Mode Switch -->
+          <button id="theme-toggle">
+            <span>Dark Mode</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <img src="./static/img/profile.jpeg" alt="">
+      <h2>Hello, I'm <span>Utku ŞEN</span></h2>
+      <p>I'm a Software Developer.</p>
+      <a href="#projects" class="btn">Explore My Projects</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a web developer creating innovative and dynamic websites with modern web technologies.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <a class="project" href="https://space-tourism-page-chi.vercel.app/">
+          <h3>Space Tourism Page</h3>
+          <img src="./static/img/proje1.png" alt="project-1">
+          <p class="project-description">A mid-level forntend mentor project
+          </p>
+        </a>
+        <a class="project" href="https://advice-generator-app-red.vercel.app/">
+          <h3>Advice Generator</h3>
+          <img src="./static/img/proje2.png" alt="project-2">
+          <p class="project-description">A mid-level forntend mentor project
+          </p>
+        </a>
+        <a class="project" href="https://e-commerce-site-sigma-plum.vercel.app/">
+          <h3>E Commerce Site</h3>
+          <img src="./static/img/proje3.png" alt="project-3">
+          <p class="project-description">An e-commerce website made with only HTML, CSS, and JavaScript, featuring a fetch structure, user login, and a shopping cart.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Utkyfact | All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./static/js/script.js"></script>
+</body>
+</html>
