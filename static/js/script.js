@@ -36,3 +36,20 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// Hamburger Menu
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.navbar ul');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+
+// Menü linklerine tıklandığında menüyü kapat
+document.querySelectorAll('.navbar ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+  });
+});

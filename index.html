@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,29 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="./static/css/style.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
       <h1 class="logo">My Portfolio</h1>
+      <!-- Hamburger Menu Button -->
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul>
         <li><a href="#about">
-          <span>About Me</span>
-        </a></li>
+            <span>About Me</span>
+          </a></li>
         <li><a href="#projects">
-          <span>Projects</span>
-        </a></li>
+            <span>Projects</span>
+          </a></li>
         <li><a href="#contact">
-          <span>Contact</span>
-        </a></li>
+            <span>Contact</span>
+          </a></li>
         <li>
-          <!-- Dark/Light Mode Switch -->
           <button id="theme-toggle">
             <span>Dark Mode</span>
           </button>
@@ -55,6 +62,12 @@
     <div class="container">
       <h2>My Projects</h2>
       <div class="project-list">
+        <a class="project" href="https://e-commerce-site-sigma-plum.vercel.app/">
+          <h3>e-Commerce Site</h3>
+          <img src="./static/img/proje3.png" alt="project-3">
+          <p class="project-description">An e-commerce website made with only HTML, CSS, and JavaScript, featuring a
+            fetch structure, user login, and a shopping cart.</p>
+        </a>
         <a class="project" href="https://space-tourism-page-chi.vercel.app/">
           <h3>Space Tourism Page</h3>
           <img src="./static/img/proje1.png" alt="project-1">
@@ -66,11 +79,6 @@
           <img src="./static/img/proje2.png" alt="project-2">
           <p class="project-description">A mid-level forntend mentor project
           </p>
-        </a>
-        <a class="project" href="https://e-commerce-site-sigma-plum.vercel.app/">
-          <h3>E Commerce Site</h3>
-          <img src="./static/img/proje3.png" alt="project-3">
-          <p class="project-description">An e-commerce website made with only HTML, CSS, and JavaScript, featuring a fetch structure, user login, and a shopping cart.</p>
         </a>
       </div>
     </div>
@@ -97,4 +105,5 @@
 
   <script src="./static/js/script.js"></script>
 </body>
+
 </html>
