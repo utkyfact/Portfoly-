@@ -252,8 +252,10 @@ body {
 
 .project-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 30px;
+  gap: 12px;
 }
 
 .project {
@@ -262,6 +264,7 @@ body {
   width: 30%;
   border-radius: 10px;
   text-decoration: none;
+  margin: 6px;
 }
 
 .project img {
@@ -420,6 +423,7 @@ section.visible {
 
   .project {
     width: 90%;
+    margin: 0;
   }
 }
 
